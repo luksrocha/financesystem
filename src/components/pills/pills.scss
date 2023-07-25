@@ -1,0 +1,8 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.Pills {
+    background-color: $primary-color-100;
+    padding: 4px 16px;
+    color: $primary-color-500;
+    width: fit-content;
+}

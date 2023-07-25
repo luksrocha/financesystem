@@ -1,0 +1,12 @@
+.Dashboard{
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & &__content {
+        display: flex;
+        height: 100%
+    }
+} 

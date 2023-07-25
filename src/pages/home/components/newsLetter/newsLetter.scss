@@ -1,0 +1,66 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.NewsLetter {
+    height: 412px;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: $primary-color-700;
+
+    background-image: url('src/assets/img/footer.svg');
+
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
+    & &__text, & &__form {
+        width: 385px;
+    }
+
+    & &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $white;
+    }
+
+    & &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        &--input {
+            display: flex;
+            flex-direction: column;
+
+            > label {
+                color: $white;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }        
+            
+            > input {
+                height: 3rem;
+                border-radius: 8px;
+                padding: 0 20px;
+                border: none;
+                outline: none;
+
+            }
+        }
+
+        &--subscribe {
+            padding: 14px 28px;
+            background-color: $primary-color-500;
+            border-radius: 32px;
+            color: $white;
+            box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.6);
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+    }
+}

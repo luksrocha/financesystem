@@ -1,0 +1,9 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.ContentArea {
+    padding: 69px 56px;
+    width: 100%;
+    min-height: calc(100% - $header-height);
+    background-color: #f9f9f9;
+    overflow: auto;
+}

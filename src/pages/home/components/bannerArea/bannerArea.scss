@@ -1,0 +1,51 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.BannerArea {
+    padding: 60px 0;
+
+    & &__content {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+
+        &--text {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding: 0 2rem 0 0;
+
+            > h1 {
+                color: $primary-color-500;
+            }
+
+            > button {
+                background-color: $primary-color-500;
+                color: $white;
+                padding: 14px 24px;
+                border-radius: 32px;
+            }
+        }
+
+        &--pills {
+            display: flex;
+            gap: 32px;
+        }
+
+        &--banner {
+            flex: 1;
+            display: flex;
+            overflow-x: hidden;
+            gap: 40px;
+            transition: all 0.5s;
+
+            >img {
+                height: 70%;
+                width: 70%;
+                object-fit: cover;
+            
+            }
+        }
+    }
+}
+

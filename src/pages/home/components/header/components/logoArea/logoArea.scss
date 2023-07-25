@@ -1,0 +1,15 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.LogoArea {
+    display: flex;
+    gap: 24px;
+
+    & > :first-child {
+        margin-right: 16px;
+    }
+
+    > span {
+        cursor: pointer;
+        color: $text-base-color;
+    }
+}

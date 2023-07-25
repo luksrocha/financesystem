@@ -1,0 +1,48 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.ServicesArea {
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+
+    & &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex: 1;
+
+        &--firstRow,
+        &--secondRow {
+            display: flex;
+            gap: 32px;
+        }
+
+        &--secondRow {
+            margin-left: 60px;
+        }
+    }
+
+    & &__textArea {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1;
+        padding: 0 24px;
+
+        > h3 {
+            color: $primary-color-500;
+        }
+
+        > h2, span {
+            color:$text-base-color
+        }
+
+        > button {
+            background-color: $primary-color-500;
+            padding: 14px 24px;
+            width: 11rem;
+            color: $white;
+            border-radius: 32px;
+        }
+    }
+}

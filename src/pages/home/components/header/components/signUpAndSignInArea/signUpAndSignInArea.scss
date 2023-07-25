@@ -1,0 +1,22 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.SignUpAndSignInArea {
+    display: flex;
+    gap: 24px;
+
+    &__signin,
+    &__signup {
+        padding: 8px 16px;
+        border-radius: 32px;
+    }
+    
+    &__signin {
+        color: $black;
+    }
+    
+    &__signup {
+        color: $white;
+        background-color: $primary-color-500;
+      
+    }
+}

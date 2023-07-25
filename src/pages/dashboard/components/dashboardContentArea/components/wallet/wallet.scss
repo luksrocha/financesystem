@@ -1,0 +1,62 @@
+@import 'src/assets/sass-utils/variables.scss';
+
+.Wallet {
+    height: 389px;
+    border-radius: 8px;
+    background: $white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+
+    & &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $secondary-color-200;
+
+        &--text {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &--button {
+            display: inline-flex;
+            padding: 8px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 32px;
+            color: $white;
+            background-color: $primary-color-500;
+        }
+    }
+
+    & &__content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        color: $text-base-color;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+          
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            background: $primary-color-500;
+            border-radius: 15px;
+          }
+
+          &.empty {
+            justify-content: center;
+          }
+    }
+}
